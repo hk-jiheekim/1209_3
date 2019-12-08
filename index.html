@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>난봉가</title>
+	<style type="text/css">
+
+		@font-face { font-family: 'SDKukdetopokki'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDKukdetopokki.woff') format('woff'); font-weight: normal; font-style: normal; }
+		@font-face { font-family: 'GyeonggiBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		#monitor{position: fixed; background: black; top: 0px; right: 0px; width: 70px; height: 20px; padding: 5px; color: white;}
+
+		ul{list-style-type: none;}
+		li{float: left;}
+		li a{text-decoration: none; color: black; font-weight: bold; display: block; text-align:center; padding: 5px 35px; }
+		li a:link, li a:hover; li a:active;, li a:visited{display:block; text-decoration: none; color: black; font-weight: bold; transition: all 1s;}
+		li a:hover{background: black; color: white;text-decoration: none;}
+		
+		.nav{position: fixed; left: calc(50% + 200px); z-index: 999; font-family: 'SDKukdetopokki'; opacity: 70%; z-index: 999;}
+
+
+		
+
+		section .wrap{position: relative;}
+		.wrap{height: 700px;}
+		h1, h2, h3{font-family: 'SDKukdetopokki'; position: absolute;font-size: 35px; color: #300216; z-index: 997;}
+		h3{opacity: 0;}
+		p{font-family: 'GyeonggiBatang';  position: absolute; word-break: keep-all;width: 500px; line-height: 1.8em; font-size: 18px; z-index: 997; opacity: 0;}
+		img, iframe{position: absolute;}
+		iframe{z-index: 997; opacity: 0;}
+
+		.sp1{ top: 20px; z-index: 999;}
+		.sp2{top: 60px; z-index: 999;}
+		.sp3{ top: 100px; z-index: 999;}
+		.sp4{ top:140px;z-index: 999;}
+		.sp5{top: 180px;z-index: 999;}
+		details{position: absolute; left: 30px;}
+		details a{text-decoration: none; display: block; z-index: 999; position: fixed;}
+		details p{z-index: 999; width: 70px; text-align: center; position: fixed; font-family: 'SDKukdetopokki'; opacity: 1; color: black;}
+		details a:link, details a:hover; details a:active;, details a:visited{display:block; text-decoration: none; color: black; font-weight: bold; transition: all 1s;}
+		details p:hover{background: black; color: white;text-decoration: none;}
+
+		.a .wrap{height: 500px;}
+		.a .wrap h1{bottom: 50px; font-size: 50px; left: calc(50% - 90px);}
+		.a .wrap .aimg{width: 100%; position: fixed; top: -10px; z-index: 990; height: 1300px; opacity: 0.8; left: -5px;}
+		.a .wrap .aimg2{width: 400px; top: 100px; z-index: 990; position: fixed; z-index: 996; opacity: 0.5; }
+		
+		.b .wrap{height: 1000px;}
+		.b .wrap p{left: calc(50% - 280px); top: 70px; text-align: center; line-height: 2.2em;}
+		.b .bv1{ bottom: 150px; left: calc(50% - 700px);}
+		.b .bv2{ bottom: 150px; left: calc(50% + 300px);}
+		.b .bv3{ bottom: 150px; left: calc(50% - 190px);}
+		@keyframes btext1{from{opacity: 0; top: 170px;} to{opacity: 1; top: 70px;}}
+		@keyframes bvi1{from{opacity: 0; left: -500px;} to{opacity: 1; left: calc(50% - 700px);}}
+		@keyframes bvi3{from{opacity: 0; bottom: 50px;} to{opacity: 1; bottom: 150px;}}
+		@keyframes bvi2{from{opacity: 0; left: 1500px;} to{opacity: 1; left: calc(50% + 300px);}}
+
+
+
+		
+		.c .wrap{height: 500px;}
+		.c .wrap h3{top: 150px; left: calc(50% - 100px);}
+		.c .wrap p{left: calc(50% - 50px); top: 150px;}
+		@keyframes ctext1{from{opacity: 0; left: 1500px;} to{opacity: 1;left: calc(50% - 350px);}}
+		@keyframes ctext2{from{opacity: 0; left: 1500px;} to{opacity: 1;left: calc(50% - 100px);}}
+
+		.d .wrap, .e .wrap{height: 550px;}
+		.d .wrap h3{left: calc(50% - 450px);top: 50px;}
+		.d .wrap p{left: calc(50% - 350px); top: 50px;} 
+		@keyframes dtext1{from{opacity: 0; left: -500px;} to{opacity: 1;left: calc(50% - 350px); }}
+		@keyframes dtext2{from{opacity: 0; left: -500px;} to{opacity: 1;left: calc(50% - 100px); }}
+
+		.e .wrap h3{left: calc(50% - 150px); }
+		.e .wrap p{left: calc(50% - 50px); } 
+		@keyframes etext1{from{opacity: 0; left: 1500px;} to{opacity: 1;left: calc(50% - 350px); }}
+		@keyframes etext2{from{opacity: 0; left: 1500px;} to{opacity: 1;left: calc(50% - 100px); }}
+
+	</style>
+</head>
+<body>
+	<div id="monitor"></div>
+
+	<details>
+   	 	<summary style="position: fixed; z-index: 999; font-size: 25px; font-weight: bolder;">〓</summary>
+   	 		<p class="sp1"><a href="https://hk-jiheekim.github.io/1209_1/"> 수궁가</a></p>
+   	 		<p class="sp2"><a href="https://hk-jiheekim.github.io/1209_2/"> 사랑가</a></p>
+   	 		<p class="sp3"><a href="https://hk-jiheekim.github.io/1209_3/"> 난봉가</a></p>
+   	 		<p class="sp4"><a href="https://hk-jiheekim.github.io/1209_4/"> 태평가</a></p>
+   	 		<p class="sp5"><a href="https://hk-jiheekim.github.io/1209_5/"> 수심가</a></p>
+	</details>
+	
+	<section class="nav">
+		<nav>
+			<ul>
+			
+			<li><a href="#cc">긴난봉가</a></li>
+			<li><a href="#dd">자진난봉가</a></li>
+			<li><a href="#ee">사설난봉가 </a></li>
+			
+		
+			</ul>
+		</nav>
+	</section>
+	<section class="a">
+		<div class="wrap">
+			<img class="aimg" src="./flower1.png">
+			<img class="aimg2" src="./flower2.png">
+			<h1>난봉가</h1>
+		</div>
+	</section>
+
+	<section class="b" id="bb">
+		<div class="wrap">
+			<p id="bp">난봉가는 황해도 지방의 민요이다. 긴난봉가, 자진난봉가, 개성난봉가 등 많은 종류가 있지만, 그 원판은 긴난봉가이다.
+			도드리장단이나 중모리장단으로 혹은 굿거리장단으로도 이 한다. 노랫말은 대개 사랑타령이다. 보통 「난봉가」라 하면 긴난봉가, 자진난봉가, 사설난봉가를 아우러는 말이다.</p>
+			
+			<iframe class="bv1" id="bbv1" width="410" height="215" src="https://www.youtube.com/embed/QLRxO9AmNNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe class="bv2" id="bbv2" width="410" height="215" src="https://www.youtube.com/embed/lWY-5oeLTL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<iframe class="bv3" id="bbv3" width="410" height="215"  src="https://www.youtube.com/embed/Say_VuoihZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<section class="c" id="cc">
+		<div class="wrap">
+			<h3 id="ch3">긴난봉가</h3>
+			<p id="cp">난봉가 중 가장 오래된 난봉가이며,  
+			경기·서도 지방 여러 민요의 원형에 해당된다.대체적으로 중모리장단에 맞추어 부른다. 곡명은 옛 사설에 “난봉이 났네, 난봉이 났네…….”로 시작했기 때문에 붙여진 것이다. 그러나 현재 불리는 노래말은 난봉과 관계 없는 서정적인 내용으로 되어 있다. 조선 후기부터 널리 불린 것으로 여겨지고 있다.
+  </p>
+			
+		</div>		
+	</section>
+
+	<section class="d" id="dd">
+		<div class="wrap">
+			<h3 id="dh3">자진난봉가</h3>
+			<p id="dp">자진난봉가는 긴난봉가 뒤에 이어서 부르는 소리이며, 빠른굿거리장단에 얹어 보다 많은 사설을 노래한다. 넘어갈 때는 반드시 “넘어간다 넘어간다. 자주 허는 난봉가로 훨훨 넘어간다.”라는 말로 소리를 한다.황해도지방에서는 이 노래를 부르며 춤을 춘다고 한다. 사는 대개 사랑에 관한 것이 많으며 풍광을 읊거나 인생무상을 노래한 것도 있다.</p>
+			
+		</div>
+	</section>
+
+	<section class="e" id="ee">
+		<div class="wrap">
+			<h3 id="eh3">사설난봉가</h3>
+			<p id="ep">〈사설난봉가〉는 서도민요로 개타령 또는 잦은개타령이라고도 한다.
+		 비교적 빠른 볶는타령장단에 사설을 엮어가며 부르는 노래로 가사의 해학성이 뛰어나다. 노랫말을 두 번씩 반복하여 부른다. 첫 번째 사설은 비교적 리드미컬하나, 두 번째 반복되는 사설은 빠른 속도로 엮어나간다. 말을 몰아서 엮어나가는 가락과 장단이 무척 흥겹다. 노랫말 역시 오래된 것과 새롭게 창작된 것이 뒤섞여 있다. 
+ </p>
+		</div>
+	</section>
+	<script type="text/javascript">
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+		
+		if ( t > 50) {bp.style.animation = "btext1 2s ease-out forwards";}
+		else{bp.style.animation = "";}
+
+		if ( t > 500) {bbv1.style.animation = "bvi1 1s ease-in forwards";}
+		else{bbv1.style.animation = "";}
+		if ( t > 500) {bbv2.style.animation = "bvi2 1s ease-in forwards";}
+		else{bbv2.style.animation = "";}
+		if ( t > 500) {bbv3.style.animation = "bvi3 1s ease-in forwards";}
+		else{bbv3.style.animation = "";}
+
+
+		if ( t > 1000) {ch3.style.animation = "ctext1 1s ease-in forwards";}
+		else{ch3.style.animation = "";}
+		if ( t > 1000) {cp.style.animation = "ctext2 1s ease-in forwards";}
+		else{cp.style.animation = "";}
+
+
+		if ( t > 1500) {dh3.style.animation = "dtext1 1s ease-in forwards";}
+		else{dh3.style.animation = "";}
+		if ( t > 1500) {dp.style.animation = "dtext2 1s ease-in forwards";}
+		else{dp.style.animation = "";}
+
+		if ( t > 2000) {eh3.style.animation = "etext1 1s ease-in forwards";}
+		else{eh3.style.animation = "";}
+		if ( t > 2000) {ep.style.animation = "etext2 1s ease-in forwards";}
+		else{ep.style.animation = "";}
+
+
+
+
+	}
+	</script>
+</body>
+</html>
